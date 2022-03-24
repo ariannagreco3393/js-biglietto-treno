@@ -12,7 +12,7 @@ per indicare centesimi sul prezzo).
 // chiedere all'utente numero km che vuole percorrere
 const km_da_percorrere =  Number(prompt("Quanti km devi percorrere?"))
 // chiedere all'utente l'età del passeggero
-const età_passeggero =  Number(prompt("Quanti anni hai?"))
+const eta_passeggero =  Number(prompt("Quanti anni hai?"))
 
 //calcolare prezzo totale del viaggio 0.21€ al km
 const price_ticket = (km_da_percorrere * 0.21);
@@ -31,10 +31,10 @@ const price_over_65_ticket = price_ticket - over_65_discount;
 
 //prezzo biglietto passeggero
 
-if (età_passeggero < 18) {
+if (eta_passeggero < 18) {
     const price_under_18_ticket = price_ticket - under_18_discount;
   
-} else if (età_passeggero > 65) {
+} else if (eta_passeggero > 65) {
     const price_over_65_ticket = price_ticket - over_65_discount;
     
 } else {
@@ -42,10 +42,13 @@ if (età_passeggero < 18) {
     
 } 
 
-if (età_passeggero < 18) {
+//comunichiamo prezzo biglietto passeggero
+
+
+if (eta_passeggero < 18) {
     console.log("Il tuo biglietto con sconto under 18 costa € " + price_under_18_ticket);
   
-} else if (età_passeggero > 65) {
+} else if (eta_passeggero > 65) {
     console.log("Il tuo biglietto con sconto over 65 costa € " + price_over_65_ticket)
     
 } else {
