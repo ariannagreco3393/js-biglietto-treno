@@ -53,3 +53,11 @@ if (eta_passeggero < 18) {
 } else {
     console.log("il tuo biglietto costa € " + price_ticket.toFixed(2))  
 } 
+
+//stampa a schermo
+
+document.getElementById("price-ticket").innerHTML = price_under_18_ticket;
+document.getElementById("price-ticket").innerHTML = price_over_65_ticket;
+document.getElementById("price-ticket").innerHTML = price_ticket;
+
+
