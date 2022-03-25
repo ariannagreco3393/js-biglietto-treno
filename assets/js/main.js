@@ -45,15 +45,11 @@ if (eta_passeggero < 18) {
 //comunichiamo prezzo biglietto passeggero
 
 if (eta_passeggero < 18) {
-    console.log("Il tuo biglietto con sconto under 18 costa € " + price_under_18_ticket);
+    console.log("Il tuo biglietto con sconto under 18 costa € " + price_under_18_ticket.toFixed(2));
   
 } else if (eta_passeggero > 65) {
-    console.log("Il tuo biglietto con sconto over 65 costa € " + price_over_65_ticket)
+    console.log("Il tuo biglietto con sconto over 65 costa € " + price_over_65_ticket.toFixed(2))
     
 } else {
-    console.log("il tuo biglietto costa € " + price_ticket)  
+    console.log("il tuo biglietto costa € " + price_ticket.toFixed(2))  
 } 
-
-
-
-
